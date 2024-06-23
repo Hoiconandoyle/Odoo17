@@ -7,7 +7,7 @@
 ## Tải Packages và Thư viện
 <code>sudo apt-get install -y python3-pip </code> <br> <br>
 Tải thêm các gói phụ thuộc cho Odoo: <br> <br>
-<code>sudo apt-get install python-dev python3-dev libxml2-dev libxslt1-dev zlib1g-dev libsasl2-dev libldap2-dev build-essential libssl-dev libffi-dev libmysqlclient-dev libjpeg-dev libpq-dev libjpeg8-dev liblcms2-dev libblas-dev libatlas-base-dev <br>
+<code>sudo apt-get install -y python3-pip python3-dev python3-venv libxml2-dev libxslt1-dev zlib1g-dev libsasl2-dev libldap2-dev build-essential libssl-dev libffi-dev libmysqlclient-dev libjpeg-dev libpq-dev libjpeg8-dev liblcms2-dev libblas-dev libatlas-base-dev -y<br>
 sudo apt-get install -y npm <br>
 sudo ln -s /usr/bin/nodejs /usr/bin/node <br>
 sudo npm install -g less less-plugin-clean-css <br>
@@ -35,6 +35,8 @@ sudo su - odoo17 -s /bin/bash <br>
 git clone https://www.github.com/odoo/odoo --depth 1 --branch 17.0 --single-branch . <br>
 
 ## Cài đặt các packages python cần thiết
+pip3 -m venv odoo17-venv <br>
+pip3 instal wheel <br>
 sudo pip3 install -r /opt/odoo/requirements.txt <br>
 
 ## Cài đặt Wkhtmltopdf chuyển đổi từ html sang pdf
